@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  background: url("../images//pattern-background-desktop.svg") no-repeat;
+  background-color: #e0e8ff;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .card {
+  width: 375px;
+  border-radius: 15px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 10px 15px rgba(182, 188, 205, 0.808);
+          box-shadow: 0 10px 15px rgba(182, 188, 205, 0.808);
+}
+
+.container .card > img {
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+}
+
+.container .card .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+}
+
+.container .card .content h2 {
+  font-weight: 900;
+  margin: 0;
+  color: #1f2f56;
+}
+
+.container .card .content p {
+  text-align: center;
+  font-size: 16px;
+  color: #7280a7;
+}
+
+.container .card .content .price {
+  background-color: #f5f7ff;
+  width: 90%;
+  border-radius: 10px;
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .card .content .price p {
+  color: #7280a7;
+  margin-right: 60px;
+}
+
+.container .card .content .price p span {
+  color: #1f2f56;
+  font-weight: 900;
+}
+
+.container .card .content .price a {
+  color: #3829e0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.container .card .content .price a:hover {
+  text-decoration: none;
+  color: #7280a7;
+}
+
+.container .card .content .btn1 {
+  width: 100%;
+  border: none;
+  background-color: #3829e0;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px 0;
+  -webkit-box-shadow: 0 10px 15px rgba(182, 188, 205, 0.808);
+          box-shadow: 0 10px 15px rgba(182, 188, 205, 0.808);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.container .card .content .btn1:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.container .card .content .btn2 {
+  border: none;
+  background-color: #fff;
+  color: #7280a7;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  font-weight: 900;
+}
+
+.container .card .content .btn2:hover {
+  color: #1f2f56;
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */

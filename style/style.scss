@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+$paleBlue: hsl(225, 100%, 94%);
+$brightBlue: hsl(245, 75%, 52%);
+$VeryPaleBlue: hsl(225, 100%, 98%);
+$DesaturatedBlue: hsl(224, 23%, 55%);
+$DarkBlue: hsl(223, 47%, 23%);
+$shadowColor: hsla(224, 19%, 76%, 0.808);
+
+@mixin flexible($fd, $jc, $ai) {
+  display: flex;
+  flex-direction: $fd;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  background: url("../images//pattern-background-desktop.svg") no-repeat;
+  background-color: $paleBlue;
+  width: 100vw;
+  height: 100vh;
+  @include flexible(column, center, center);
+
+  .card {
+    width: 375px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 10px 15px $shadowColor;
+
+    > img {
+      border-radius: 15px 15px 0 0;
+      width: 100%;
+    }
+    .content {
+      @include flexible(column, center, center);
+      padding: 30px;
+
+      h2 {
+        font-weight: 900;
+        margin: 0;
+        color: $DarkBlue;
+      }
+      p {
+        text-align: center;
+        font-size: 16px;
+        color: $DesaturatedBlue;
+      }
+      .price {
+        background-color: $VeryPaleBlue;
+        width: 90%;
+        border-radius: 10px;
+        padding: 0 15px;
+        @include flexible(row, space-between, center);
+
+        p {
+          color: $DesaturatedBlue;
+          margin-right: 60px;
+          span {
+            color: $DarkBlue;
+            font-weight: 900;
+          }
+        }
+        a {
+          color: $brightBlue;
+          transition: all 0.3s ease;
+          &:hover {
+            text-decoration: none;
+            color: $DesaturatedBlue;
+          }
+        }
+      }
+      .btn1 {
+        width: 100%;
+        border: none;
+        background-color: $brightBlue;
+        color: #fff;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 20px 0;
+        box-shadow: 0 10px 15px $shadowColor;
+        transition: all 0.2s ease;
+        &:hover {
+          opacity: 0.7;
+          cursor: pointer;
+        }
+      }
+      .btn2 {
+        border: none;
+        background-color: #fff;
+        color: $DesaturatedBlue;
+        padding: 10px;
+        border-radius: 10px;
+        transition: all 0.2s ease;
+        font-weight: 900;
+        &:hover {
+          color: $DarkBlue;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
